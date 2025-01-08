@@ -1,0 +1,250 @@
+/************************/
+/*    COLOUR PALETTE    */
+/************************/
+
+@import url(./themes/catppuccin-macchiato.css);
+
+/******************/
+/*    REMOVALS    */
+/******************/
+
+.titlebar-spacer,
+.titlebar-buttonbox-container,
+#firefox-view-button,
+#tabs-newtab-button,
+.tab-secondary-label,
+.tab-close-button,
+#new-tab-button,
+#alltabs-button,
+#back-button,
+#forward-button,
+#stop-reload-button,
+#customizableui-special-spring1,
+#tracking-protection-icon-container,
+#identity-box,
+#star-button-box,
+#customizableui-special-spring2,
+#save-to-pocket-button,
+#fxa-toolbar-menu-button,
+#PanelUI-button {
+    display: none !important;
+}
+
+/*  Removing tab icon overlays requires forcing the icon stack opacity.  */
+
+.tab-icon-overlay {
+    display: none !important;
+}
+
+.tab-icon-stack[indicator-replaces-favicon] > :not(&) {
+    opacity: 1 !important;
+}
+
+/************************/
+/*    COMPACT LAYOUT    */
+/************************/
+
+#navigator-toolbox {
+    border-bottom: none !important;
+}
+
+toolbar .toolbarbutton-1 {
+    padding: 0 !important;
+
+    & > .toolbarbutton-icon {
+        width: 22px !important;
+        height: 22px !important;
+    }
+
+    & > .toolbarbutton-icon, & > .toolbarbutton-text, & > .toolbarbutton-badge-stack {
+        padding: 3px !important;
+        border-radius: 4px !important;
+    }
+}
+
+/*  Tabs Toolbar  */
+
+#tabbrowser-tabs {
+    min-height: 22px !important;
+    margin-inline-start: 0 !important;
+    border-inline-start: none !important;
+    padding-inline-start: 0 !important;
+}
+
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs])[orient="horizontal"] > #tabbrowser-arrowscrollbox > .tabbrowser-tab:nth-child(1 of :not([pinned], [hidden])) {
+    margin-inline-start: 0 !important;
+}
+
+.tabbrowser-tab {
+    min-width: 22px !important;
+    padding: 0 !important;
+}
+
+.tab-background {
+    min-height: 22px !important;
+    margin-block: 0 !important;
+}
+
+.tab-loading-burst::before {
+    margin-inline-start: 3px !important;
+}
+
+.tab-content {
+    padding: 0 3px !important;
+}
+
+.tab-throbber,
+.tab-icon-pending,
+.tab-icon-image,
+.tab-sharing-icon-overlay,
+.tab-icon-overlay {
+    margin-inline-end: 3px !important;
+
+    .tabbrowser-tab[pinned] {
+        margin-inline-end: 0 !important;
+    }
+}
+
+.tabbrowser-tab[pinned] .tab-throbber,
+.tabbrowser-tab[pinned] .tab-icon-pending,
+.tabbrowser-tab[pinned] .tab-icon-image,
+.tabbrowser-tab[pinned] .tab-sharing-icon-overlay,
+.tabbrowser-tab[pinned] .tab-icon-overlay {
+    margin-inline-end: 0 !important;
+}
+
+.tab-label-container {
+    height: 100% !important;
+}
+
+.tab-label {
+    line-height: 22px !important;
+}
+
+/*  Navigation Toolbar  */
+
+#nav-bar {
+    height: 22px !important;
+    border-top: unset !important;
+}
+
+#urlbar-container[breakout] {
+    min-height: unset !important;
+}
+
+#urlbar {
+    --urlbar-height: 22px !important;
+}
+
+#urlbar-container, #search-container {
+    margin-inline: 0 !important;
+    padding-block: 0 !important;
+}
+
+#urlbar, #searchbar {
+    min-height: 22px !important;
+}
+
+#urlbar-background, #searchbar {
+    border: none !important;
+}
+
+#urlbar-input {
+    padding-left: 3px !important;
+}
+
+.urlbar-input-container {
+    border: none !important;
+    padding: 0 !important;
+}
+
+.urlbar-input-container, #searchbar {
+    border-radius: 0 !important;
+}
+
+/*************************/
+/*    ONE-LINE LAYOUT    */
+/*************************/
+
+@media (min-width: 956px) {
+    #toolbar-menubar {
+        width: 100vw !important;
+    }
+
+    #navigator-toolbox {
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+    }
+
+    #TabsToolbar {
+        order: 2 !important;
+    }
+
+    #nav-bar {
+        min-width: 25vw !important;
+    }
+
+    #urlbar-container {
+        width: unset !important;
+    }
+
+    #PersonalToolbar {
+        order: 2 !important;
+        width: 100vw !important;
+    }
+}
+
+/*****************/
+/*    COLOURS    */
+/*****************/
+
+#navigator-toolbox,
+.browser-toolbar {
+    background-color: var(--background-colour) !important;
+    color: var(--foreground-colour) !important;
+}
+
+toolbar .toolbarbutton-1:not([disabled]):hover > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
+    background-color: var(--background-colour-selection) !important;
+}
+
+.toolbarbutton-animatable-box,
+.toolbarbutton-1 {
+    fill: var(--foreground-colour) !important;
+}
+
+/*  Tabs  */
+
+.tab-background {
+    .tabbrowser-tab:hover > .tab-stack > &:not([selected], [multiselected]) {
+        background-color: var(--background-colour-selection) !important;
+    }
+}
+
+.tab-background:is([selected], [multiselected]) {
+    background-color: var(--background-colour-selection) !important;
+}
+
+.tabbrowser-tab {
+    color: var(--foreground-colour) !important;
+
+    &[soundplaying] {
+        color: var(--blue-colour) !important;
+    }
+
+    &[muted] {
+        color: var(--red-colour) !important;
+    }
+}
+
+/*  Navigation Toolbar  */
+
+#urlbar-background,
+#searchbar {
+    background-color: var(--background-colour) !important;
+}
+
+.urlbar-input,
+.searchbar-textbox {
+    color: var(--foreground-colour) !important; /* not an override */
+}
