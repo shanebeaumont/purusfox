@@ -198,6 +198,10 @@ toolbar .toolbarbutton-1 {
 /*    COLOURS    */
 /*****************/
 
+a {
+    color: var(--blue-colour) !important;
+}
+
 .browser-toolbox-background,
 .browser-toolbar {
     background-color: var(--background-colour) !important;
@@ -247,5 +251,17 @@ toolbar .toolbarbutton-1:not([disabled]):hover > :is(.toolbarbutton-icon, .toolb
 .urlbar-input,
 .searchbar-textbox {
     color: var(--foreground-colour) !important; /* not an override */
+}
+
+/***********************/
+/*    MISCELLANEOUS    */
+/***********************/
+
+a {
+    text-decoration: none !important;
+
+    &:hover {
+        text-decoration: underline !important;
+    }
 }
 
