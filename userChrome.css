@@ -164,6 +164,37 @@ toolbar .toolbarbutton-1 {
     margin-inline-end: 0 !important;
 }
 
+/*  Buttons  */
+
+.footer-button {
+    margin-inline: 3px 0 !important;
+    padding: 0 3px !important;
+
+    &.small-button {
+        min-height: 22px !important;
+    }
+}
+
+.button-text {
+    margin-inline-start: 0 !important;
+}
+
+.close {
+    height: 22px !important;
+    margin-block: 0 !important;
+    margin-inline-start: 3px !important;
+}
+
+.button-background {
+    width: 22px !important;
+    min-height: 22px !important;
+    height: 22px !important;
+
+    & label {
+        display: none !important;
+    }
+}
+
 /*  Navigation Toolbar  */
 
 #nav-bar {
