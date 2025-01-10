@@ -265,3 +265,7 @@ a {
     }
 }
 
+button {
+    cursor: pointer !important;
+}
+
