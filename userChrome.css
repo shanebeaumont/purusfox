@@ -198,7 +198,7 @@ toolbar .toolbarbutton-1 {
 /*    COLOURS    */
 /*****************/
 
-#navigator-toolbox,
+.browser-toolbox-background,
 .browser-toolbar {
     background-color: var(--background-colour) !important;
     color: var(--foreground-colour) !important;
@@ -248,3 +248,4 @@ toolbar .toolbarbutton-1:not([disabled]):hover > :is(.toolbarbutton-icon, .toolb
 .searchbar-textbox {
     color: var(--foreground-colour) !important; /* not an override */
 }
+
