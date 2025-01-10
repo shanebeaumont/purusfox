@@ -121,6 +121,49 @@ toolbar .toolbarbutton-1 {
     line-height: 22px !important;
 }
 
+/*  Notifications  */
+
+#tab-notification-deck {
+    order: 2 !important;
+    width: 100% !important;
+}
+
+.infobar {
+    margin: 0 !important;
+    border-radius: 0 !important;
+    border-width: 0 !important;
+}
+
+.container {
+    min-height: 22px !important;
+    padding-block: 0 !important;
+    padding-inline: 3px 0 !important;
+}
+
+.content {
+    flex-grow: 0 !important;
+    margin-inline-start: 0 !important;
+}
+
+.text-container {
+    padding-block: 0 !important;
+    gap: 3px !important;
+}
+
+.icon-container {
+    margin-inline-start: 0 !important;
+    border-radius: 0 !important;
+    border-width: 0 !important;
+}
+
+.message {
+    margin-inline-end: 3px !important;
+}
+
+.notification-link {
+    margin-inline-end: 0 !important;
+}
+
 /*  Navigation Toolbar  */
 
 #nav-bar {
@@ -215,6 +258,27 @@ toolbar .toolbarbutton-1:not([disabled]):hover > :is(.toolbarbutton-icon, .toolb
 .toolbarbutton-animatable-box,
 .toolbarbutton-1 {
     fill: var(--foreground-colour) !important;
+}
+
+/*  Notifications  */
+
+.infobar {
+    background-color: var(--background-colour) !important;
+    color: var(--foreground-colour) !important;
+}
+
+.icon {
+    color: var(--accent-colour) !important;
+}
+
+/*  Buttons  */
+
+.footer-button {
+    background-color: var(--background-colour) !important;
+
+    &:hover {
+        background-color: var(--background-colour-selection) !important;
+    }
 }
 
 /*  Tabs  */
