@@ -270,6 +270,23 @@ toolbar .toolbarbutton-1 {
     padding: 0 !important;
 }
 
+/*  Bookmarks Toolbar  */
+
+#PersonalToolbar {
+    min-height: 22px !important;
+    padding-inline: 0 !important;
+
+    & .toolbarbutton-1 {
+        margin-block: 0 !important;
+    }
+}
+
+#personal-toolbar-empty-description,
+toolbarbutton.bookmark-item:not(.subviewbutton) {
+    margin: 0 !important;
+    padding: 0 3px !important;
+}
+
 /*************************/
 /*    ONE-LINE LAYOUT    */
 /*************************/
