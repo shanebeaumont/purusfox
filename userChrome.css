@@ -26,7 +26,10 @@
 #customizableui-special-spring2,
 #save-to-pocket-button,
 #fxa-toolbar-menu-button,
-#PanelUI-button {
+#PanelUI-button,
+.panel-header,
+#unified-extensions-view toolbarseparator,
+.unified-extensions-manage-extensions {
     display: none !important;
 }
 
@@ -238,6 +241,20 @@ toolbar .toolbarbutton-1 {
 
 .urlbar-input-container, #searchbar {
     border-radius: 0 !important;
+}
+
+/*  Extensions Panel  */
+
+:is(panelview, #widget-overflow-fixed-list) .toolbaritem-combined-buttons {
+    margin: 0 !important;
+}
+
+.subviewbutton {
+    padding: 3px !important;
+}
+
+.unified-extensions-item-menu-button.subviewbutton {
+    padding: 0 !important;
 }
 
 /*************************/
