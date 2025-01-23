@@ -256,6 +256,12 @@ toolbar .toolbarbutton-1 {
     border-radius: 0 !important;
 }
 
+/*  Panels  */
+
+.subviewbutton {
+    padding: 3px !important;
+}
+
 /*  Downloads Panel  */
 
 #downloadsPanel-mainView {
@@ -281,10 +287,6 @@ toolbar .toolbarbutton-1 {
 
 :is(panelview, #widget-overflow-fixed-list) .toolbaritem-combined-buttons {
     margin: 0 !important;
-}
-
-.subviewbutton {
-    padding: 3px !important;
 }
 
 .unified-extensions-item-menu-button.subviewbutton {
