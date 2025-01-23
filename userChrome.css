@@ -425,6 +425,15 @@ toolbar .toolbarbutton-1:not([disabled]):hover > :is(.toolbarbutton-icon, .toolb
     background-color: var(--background-colour) !important;
 }
 
+#downloads-indicator-progress-inner {
+    background-image: conic-gradient(var(--blue-colour) var(--download-progress-pcent), transparent var(--download-progress-pcent)) !important;
+}
+
+#downloads-indicator-finish-image,
+#downloads-button[attention="success"] #downloads-indicator-icon {
+    fill: var(--blue-colour) !important;
+}
+
 .urlbar-input,
 .searchbar-textbox {
     color: var(--foreground-colour) !important; /* not an override */
