@@ -430,6 +430,12 @@ toolbar .toolbarbutton-1:not([disabled]):hover > :is(.toolbarbutton-icon, .toolb
     color: var(--foreground-colour) !important; /* not an override */
 }
 
+/*  Panels  */
+
+panel toolbarseparator {
+    border-top: 1px solid var(--background-colour-selection) !important;
+}
+
 /***********************/
 /*    MISCELLANEOUS    */
 /***********************/
