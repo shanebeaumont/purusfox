@@ -258,6 +258,14 @@ toolbar .toolbarbutton-1 {
 
 /*  Panels  */
 
+slot[part="content"] {
+    border: none !important;
+}
+
+panel toolbarseparator {
+    margin: 0 !important;
+}
+
 .subviewbutton {
     padding: 3px !important;
 }
