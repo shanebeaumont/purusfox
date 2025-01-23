@@ -256,6 +256,27 @@ toolbar .toolbarbutton-1 {
     border-radius: 0 !important;
 }
 
+/*  Downloads Panel  */
+
+#downloadsPanel-mainView {
+    padding: 0 !important;
+}
+
+#downloadsListBox richlistitem {
+    min-height: 44px !important;
+    margin: 0 !important;
+    border-radius: 4px !important;
+    padding-inline-end: 3px !important;
+}
+
+.downloadMainArea {
+    padding: 0 !important;
+}
+
+.downloadTypeIcon {
+    margin-inline-end: 3px !important;
+}
+
 /*  Extensions Panel  */
 
 :is(panelview, #widget-overflow-fixed-list) .toolbaritem-combined-buttons {
