@@ -445,15 +445,15 @@ toolbar .toolbarbutton-1:not([disabled]):hover > :is(.toolbarbutton-icon, .toolb
 
 /*  Panels  */
 
+slot[part="content"] {
+    color: var(--foreground-colour) !important;
+}
+
 panel toolbarseparator {
     border-top: 1px solid var(--background-colour-selection) !important;
 }
 
 /*  Downloads Panel  */
-
-slot[part="content"] {
-    color: var(--foreground-colour) !important;
-}
 
 #downloadsPanel-mainView {
     background-color: var(--background-colour) !important;
