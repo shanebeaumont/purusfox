@@ -510,6 +510,12 @@ panel toolbarseparator {
     background-color: var(--background-colour) !important;
 }
 
+/*  Bookmarks Sidebar  */
+
+#bookmarks-view {
+    color: var(--foreground-colour) !important;
+}
+
 /***********************/
 /*    MISCELLANEOUS    */
 /***********************/
