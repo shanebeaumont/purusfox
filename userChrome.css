@@ -499,6 +499,17 @@ panel toolbarseparator {
     color: var(--foreground-colour-dark) !important;
 }
 
+/*  Sidebar  */
+
+#sidebar-main, #sidebar-box {
+    background-color: var(--background-colour) !important;
+    color: var(--foreground-colour) !important;
+}
+
+#sidebar-splitter {
+    background-color: var(--background-colour) !important;
+}
+
 /***********************/
 /*    MISCELLANEOUS    */
 /***********************/
