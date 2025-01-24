@@ -260,6 +260,16 @@ toolbar .toolbaritem-combined-buttons {
     margin-inline: 0 !important;
 }
 
+#reader-mode-button {
+    width: 22px !important;
+    height: 22px !important;
+    padding: 0 !important;
+}
+
+#reader-mode-button-icon {
+    margin: 3px !important;
+}
+
 /*  Panels  */
 
 slot[part="content"] {
