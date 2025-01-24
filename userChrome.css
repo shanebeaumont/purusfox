@@ -256,6 +256,10 @@ toolbar .toolbarbutton-1 {
     border-radius: 0 !important;
 }
 
+toolbar .toolbaritem-combined-buttons {
+    margin-inline: 0 !important;
+}
+
 /*  Panels  */
 
 slot[part="content"] {
