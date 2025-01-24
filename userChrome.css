@@ -484,6 +484,10 @@ toolbar .toolbarbutton-1:not([disabled]):hover > :is(.toolbarbutton-icon, .toolb
     color: var(--foreground-colour) !important; /* not an override */
 }
 
+#reader-mode-button[readeractive] .urlbar-icon {
+    fill: var(--blue-colour) !important;
+}
+
 /*  Panels  */
 
 slot[part="content"] {
