@@ -480,6 +480,12 @@ toolbar .toolbarbutton-1:not([disabled]):hover > :is(.toolbarbutton-icon, .toolb
     background-color: var(--background-colour) !important;
 }
 
+#urlbar-zoom-button {
+    border-radius: 4px !important;
+    background-color: var(--background-colour-dark) !important;
+    color: var(--foreground-colour) !important;
+}
+
 #downloads-indicator-progress-inner {
     background-image: conic-gradient(var(--blue-colour) var(--download-progress-pcent), transparent var(--download-progress-pcent)) !important;
 }
