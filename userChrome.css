@@ -400,7 +400,12 @@ toolbarbutton.bookmark-item:not(.subviewbutton) {
 /***************************/
 
 a {
+    text-decoration: none !important;
     color: var(--blue-colour) !important;
+
+    &:hover {
+        text-decoration: underline !important;
+    }
 }
 
 .browser-toolbox-background,
@@ -533,14 +538,6 @@ panel toolbarseparator {
 /***********************/
 /*    MISCELLANEOUS    */
 /***********************/
-
-a {
-    text-decoration: none !important;
-
-    &:hover {
-        text-decoration: underline !important;
-    }
-}
 
 button {
     cursor: pointer !important;
