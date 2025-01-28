@@ -520,7 +520,9 @@ panel toolbarseparator {
 
 /*  Sidebar  */
 
-#sidebar-main, #sidebar-box {
+#sidebar-main,
+#sidebar-box,
+.sidebar-panel {
     background-color: var(--background-colour) !important;
     color: var(--foreground-colour) !important;
 }
