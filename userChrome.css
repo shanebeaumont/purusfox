@@ -527,6 +527,19 @@ panel toolbarseparator {
     color: var(--foreground-colour) !important;
 }
 
+.sidebar-panel .sidebar-placesTreechildren {
+    &::-moz-tree-row(selected, focus) {
+        background-color: var(--background-colour-selection) !important;
+        outline-style: none !important;
+    }
+
+    &::-moz-tree-image(selected, focus),
+    &::-moz-tree-twisty(selected, focus),
+    &::-moz-tree-cell-text(selected, focus) {
+        color: var(--foreground-colour ) !important;
+    }
+}
+
 #sidebar-splitter {
     background-color: var(--background-colour) !important;
 }
