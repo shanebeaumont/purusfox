@@ -395,9 +395,9 @@ toolbarbutton.bookmark-item:not(.subviewbutton) {
     }
 }
 
-/*****************/
-/*    COLOURS    */
-/*****************/
+/***************************/
+/*    COLOURS & STYLING    */
+/***************************/
 
 a {
     color: var(--blue-colour) !important;
