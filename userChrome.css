@@ -559,6 +559,10 @@ panel toolbarseparator {
     }
 }
 
+#search-box {
+    color: var(--foreground-colour) !important;
+}
+
 #sidebar-splitter {
     background-color: var(--background-colour) !important;
 }
