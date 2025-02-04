@@ -404,6 +404,10 @@ toolbarbutton.bookmark-item:not(.subviewbutton) {
 /*    COLOURS & STYLING    */
 /***************************/
 
+::selection {
+    background-color: var(--background-colour-selection) !important;
+}
+
 a {
     text-decoration: none !important;
     color: var(--blue-colour) !important;
