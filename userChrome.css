@@ -408,6 +408,10 @@ toolbarbutton.bookmark-item:not(.subviewbutton) {
     background-color: var(--background-colour-selection) !important;
 }
 
+::placeholder {
+    color: var(--foreground-colour-dark) !important;
+}
+
 a {
     text-decoration: none !important;
     color: var(--blue-colour) !important;
