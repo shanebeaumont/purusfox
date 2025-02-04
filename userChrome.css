@@ -565,6 +565,7 @@ panel toolbarseparator {
 
 #sidebar-splitter {
     background-color: var(--background-colour) !important;
+    border-right: 1px solid var(--background-colour-selection) !important;
 }
 
 /*  Bookmarks Sidebar  */
