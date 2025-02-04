@@ -364,6 +364,18 @@ toolbarbutton.bookmark-item:not(.subviewbutton) {
     padding: 3px !important;
 }
 
+#sidebar-search-container {
+    padding: 3px !important;
+}
+
+#search-box {
+    padding: 0 !important;
+}
+
+input {
+    padding: 0 !important;
+}
+
 #sidebar-splitter {
     border: 1px var(--background-colour) !important;
 }
