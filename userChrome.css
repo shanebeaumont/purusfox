@@ -482,15 +482,17 @@ toolbar .toolbarbutton-1:not([disabled]):hover > :is(.toolbarbutton-icon, .toolb
 }
 
 .tabbrowser-tab {
-    color: var(--foreground-colour) !important;
-
-    &[soundplaying] {
+    &[soundplaying] .tab-content {
         color: var(--blue-colour) !important;
     }
 
-    &[muted] {
+    &[muted] .tab-content {
         color: var(--red-colour) !important;
     }
+}
+
+.tab-content {
+    color: var(--foreground-colour) !important;
 }
 
 /*  Navigation Toolbar  */
