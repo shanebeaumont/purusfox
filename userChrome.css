@@ -477,6 +477,7 @@ toolbar .toolbarbutton-1:not([disabled]):hover > :is(.toolbarbutton-icon, .toolb
     }
 
     &:is([selected], [multiselected]) {
+        outline: none !important;
         background-color: var(--background-colour-selection) !important;
     }
 }
