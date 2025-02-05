@@ -498,6 +498,11 @@ toolbar .toolbarbutton-1:not([disabled]):hover > :is(.toolbarbutton-icon, .toolb
 
 /*  Navigation Toolbar  */
 
+#urlbar[focused] > #urlbar-background {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 #urlbar-background,
 #searchbar {
     background-color: var(--background-colour) !important;
