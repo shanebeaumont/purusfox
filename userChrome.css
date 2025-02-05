@@ -475,10 +475,10 @@ toolbar .toolbarbutton-1:not([disabled]):hover > :is(.toolbarbutton-icon, .toolb
     .tabbrowser-tab:hover > .tab-stack > &:not([selected], [multiselected]) {
         background-color: var(--background-colour-selection) !important;
     }
-}
 
-.tab-background:is([selected], [multiselected]) {
-    background-color: var(--background-colour-selection) !important;
+    &:is([selected], [multiselected]) {
+        background-color: var(--background-colour-selection) !important;
+    }
 }
 
 .tabbrowser-tab {
