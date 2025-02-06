@@ -29,7 +29,8 @@
 #PanelUI-button,
 .panel-header,
 #unified-extensions-view toolbarseparator,
-.unified-extensions-manage-extensions {
+.unified-extensions-manage-extensions,
+.findbar-container .checkbox-check {
     display: none !important;
 }
 
@@ -378,6 +379,62 @@ input {
 
 #sidebar-splitter {
     border: 1px var(--background-colour) !important;
+}
+
+/*  Findbar  */
+
+findbar {
+    order: -1 !important;
+    border-top: none !important;
+    padding-block: 0 !important;
+}
+
+.findbar-container {
+    height: 22px !important;
+    margin-inline-start: 3px !important;
+}
+
+.findbar-textbox {
+    border: none !important;
+    padding-inline: 3px !important;
+}
+
+.findbar-find-previous,
+.findbar-find-next {
+    margin-inline: 0 !important;
+    padding: 3px !important;
+}
+
+.findbar-container > checkbox {
+    margin: 0 3px !important;
+}
+
+.checkbox-check {
+    margin-inline-end: 3px !important;
+}
+
+.checkbox-label {
+    margin: 0 !important;
+}
+
+.findbar-find-status,
+.found-matches {
+    margin-inline: 3px !important;
+}
+
+.findbar-container > checkbox {
+    margin: 0 !important;
+    border-block: 1px solid var(--background-colour-selection) !important;
+    border-left: 1px solid var(--background-colour-selection) !important;
+
+    &:last-of-type {
+        border-right: 1px solid var(--background-colour-selection) !important;
+    }
+}
+
+.findbar-closebutton {
+    margin: 0 !important;
+    padding: 3px 2px !important;
 }
 
 /*************************/
