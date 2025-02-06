@@ -651,6 +651,44 @@ panel toolbarseparator {
     color: var(--foreground-colour) !important;
 }
 
+/*  Findbar  */
+
+.browserContainer > findbar {
+    background-color: var(--background-colour) !important;
+    color: var(--foreground-colour) !important;
+}
+
+.findbar-textbox {
+    background-color: var(--background-colour-darker) !important;
+    color: var(--foreground-colour-dark) !important;
+
+    &:focus {
+        outline: none !important;
+        color: var(--foreground-colour) !important;
+    }
+}
+
+.findbar-container > checkbox {
+    border-radius: 0 !important;
+
+    &:first-of-type {
+        border-radius: 4px 0 0 4px !important;
+    }
+
+    &:last-of-type {
+        border-radius: 0 4px 4px 0 !important;
+    }
+
+    &:hover {
+        background-color: var(--background-colour-selection) !important;
+    }
+
+    &[checked="true"] {
+        background-color: var(--blue-colour) !important;
+        color: var(--background-colour) !important;
+    }
+}
+
 /***********************/
 /*    MISCELLANEOUS    */
 /***********************/
