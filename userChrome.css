@@ -61,6 +61,10 @@
 /*    COMPACT LAYOUT    */
 /************************/
 
+input {
+    padding: 0 !important;
+}
+
 #navigator-toolbox {
     border-bottom: none !important;
 }
@@ -370,10 +374,6 @@ toolbarbutton.bookmark-item:not(.subviewbutton) {
 }
 
 #search-box {
-    padding: 0 !important;
-}
-
-input {
     padding: 0 !important;
 }
 
