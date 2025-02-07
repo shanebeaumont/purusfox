@@ -101,6 +101,16 @@ toolbar .toolbarbutton-1 {
 .tabbrowser-tab {
     min-width: 22px !important;
     padding: 0 !important;
+
+    &[pinned] {
+        & .tab-throbber,
+        & .tab-icon-pending,
+        & .tab-icon-image,
+        & .tab-sharing-icon-overlay,
+        & .tab-icon-overlay {
+            margin-inline-end: 0 !important;
+        }
+    }
 }
 
 .tab-background {
@@ -126,14 +136,6 @@ toolbar .toolbarbutton-1 {
     .tabbrowser-tab[pinned] {
         margin-inline-end: 0 !important;
     }
-}
-
-.tabbrowser-tab[pinned] .tab-throbber,
-.tabbrowser-tab[pinned] .tab-icon-pending,
-.tabbrowser-tab[pinned] .tab-icon-image,
-.tabbrowser-tab[pinned] .tab-sharing-icon-overlay,
-.tabbrowser-tab[pinned] .tab-icon-overlay {
-    margin-inline-end: 0 !important;
 }
 
 .tab-label-container {
@@ -604,8 +606,12 @@ panel toolbarseparator {
     background-color: var(--background-colour) !important;
 }
 
-#downloadsListBox richlistitem:hover {
-    background-color: var(--background-colour-selection) !important;
+#downloadsListBox richlistitem {
+    border-radius: 4px !important;
+
+    &:hover {
+        background-color: var(--background-colour-selection) !important;
+    }
 }
 
 .downloadDetails {
