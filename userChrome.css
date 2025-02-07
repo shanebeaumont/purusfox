@@ -77,7 +77,9 @@ toolbar .toolbarbutton-1 {
         height: 22px !important;
     }
 
-    & > .toolbarbutton-icon, & > .toolbarbutton-text, & > .toolbarbutton-badge-stack {
+    & > .toolbarbutton-icon,
+    & > .toolbarbutton-text,
+    & > .toolbarbutton-badge-stack {
         padding: 3px !important;
         border-radius: 4px !important;
     }
@@ -231,16 +233,19 @@ toolbar .toolbarbutton-1 {
     --urlbar-height: 22px !important;
 }
 
-#urlbar-container, #search-container {
+#urlbar-container,
+#search-container {
     margin-inline: 0 !important;
     padding-block: 0 !important;
 }
 
-#urlbar, #searchbar {
+#urlbar,
+#searchbar {
     min-height: 22px !important;
 }
 
-#urlbar-background, #searchbar {
+#urlbar-background,
+#searchbar {
     border: none !important;
 }
 
