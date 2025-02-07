@@ -106,10 +106,6 @@ toolbar .toolbarbutton-1 {
     margin-block: 0 !important;
 }
 
-.tab-background:is([selected], [multiselected]) {
-    box-shadow: none !important;
-}
-
 .tab-loading-burst::before {
     margin-inline-start: 3px !important;
 }
@@ -255,10 +251,6 @@ toolbar .toolbarbutton-1 {
 .urlbar-input-container {
     border: none !important;
     padding: 0 !important;
-}
-
-.urlbar-input-container, #searchbar {
-    border-radius: 0 !important;
 }
 
 toolbar .toolbaritem-combined-buttons {
@@ -531,6 +523,7 @@ toolbar .toolbarbutton-1:not([disabled]):hover > :is(.toolbarbutton-icon, .toolb
     }
 
     &:is([selected], [multiselected]) {
+        box-shadow: none !important;
         outline: none !important;
         background-color: var(--background-colour-selection) !important;
     }
@@ -580,6 +573,10 @@ toolbar .toolbarbutton-1:not([disabled]):hover > :is(.toolbarbutton-icon, .toolb
 .urlbar-input,
 .searchbar-textbox {
     color: var(--foreground-colour) !important; /* not an override */
+}
+
+.urlbar-input-container, #searchbar {
+    border-radius: 0 !important;
 }
 
 #reader-mode-button[readeractive] .urlbar-icon {
