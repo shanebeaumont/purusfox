@@ -406,7 +406,13 @@ findbar {
 }
 
 .findbar-container > checkbox {
-    margin: 0 3px !important;
+    margin: 0 !important;
+    border-block: 1px solid var(--background-colour-selection) !important;
+    border-left: 1px solid var(--background-colour-selection) !important;
+
+    &:last-of-type {
+        border-right: 1px solid var(--background-colour-selection) !important;
+    }
 }
 
 .checkbox-check {
@@ -420,16 +426,6 @@ findbar {
 .findbar-find-status,
 .found-matches {
     margin-inline: 3px !important;
-}
-
-.findbar-container > checkbox {
-    margin: 0 !important;
-    border-block: 1px solid var(--background-colour-selection) !important;
-    border-left: 1px solid var(--background-colour-selection) !important;
-
-    &:last-of-type {
-        border-right: 1px solid var(--background-colour-selection) !important;
-    }
 }
 
 .findbar-closebutton {
