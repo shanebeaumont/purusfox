@@ -377,7 +377,7 @@ toolbarbutton.bookmark-item:not(.subviewbutton) {
 }
 
 #sidebar-splitter {
-    border: 1px var(--background-colour) !important;
+    border: 1px solid var(--background-colour) !important;
 }
 
 /*  Findbar  */
