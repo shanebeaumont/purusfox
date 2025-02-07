@@ -409,6 +409,7 @@ findbar {
     margin: 0 !important;
     border-block: 1px solid var(--background-colour-selection) !important;
     border-left: 1px solid var(--background-colour-selection) !important;
+    padding: 0 3px !important;
 
     &:last-of-type {
         border-right: 1px solid var(--background-colour-selection) !important;
